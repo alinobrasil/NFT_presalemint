@@ -10,8 +10,14 @@ module.exports = {
       url: process.env.ALCHEMY_URL,
       accounts: [process.env.PRIVATE_KEY],
     },
+    mumbai: {
+      url: process.env.POLYGON_MUMBAI_URL,
+      accounts: [process.env.PRIVATE_KEY]
+    }
   },
   etherscan: {
-    apiKey: process.env.ETHERSCAN_KEY
+    apiKey: {
+      polygonMumbai: process.env.POLYGONSCAN_KEY,
+    }
   }
 };
